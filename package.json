@@ -1,25 +1,40 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-starter-minimal",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "salexpro <dev@salex.pro>",
   "dependencies": {
+    "@svgr/webpack": "^5.5.0",
+    "bootstrap": "^5.0.0-beta3",
+    "classnames": "^2.3.1",
     "gatsby": "^3.2.1",
     "gatsby-plugin-gatsby-cloud": "^2.2.0",
     "gatsby-plugin-image": "^1.2.1",
     "gatsby-plugin-manifest": "^3.2.0",
+    "gatsby-plugin-minify-classnames": "^0.3.0",
     "gatsby-plugin-offline": "^4.2.0",
+    "gatsby-plugin-purgecss": "^6.0.1",
     "gatsby-plugin-react-helmet": "^4.2.0",
+    "gatsby-plugin-sass": "^4.3.0",
     "gatsby-plugin-sharp": "^3.2.1",
+    "gatsby-plugin-svgr-svgo": "^1.2.0",
     "gatsby-source-filesystem": "^3.2.0",
     "gatsby-transformer-sharp": "^3.2.0",
+    "gsap": "^3.6.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "sass": "^1.32.8"
   },
   "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-loader": "^4.0.2",
+    "gatsby-plugin-eslint": "^3.0.0",
     "prettier": "2.2.1"
   },
   "keywords": [

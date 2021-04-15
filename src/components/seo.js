@@ -5,10 +5,12 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import * as React from 'react'
+import PropTypes from 'prop-types'
+import { Helmet } from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby'
+
+import ogImage from '~img/og-image.png'
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -18,7 +20,7 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
-            author
+            domain
           }
         }
       }
@@ -27,14 +29,15 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const domain = site.siteMetadata?.domain
+  const titleTemplate = title ? `${title} – ${defaultTitle}` : defaultTitle
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      title={titleTemplate}
       meta={[
         {
           name: `description`,
@@ -42,7 +45,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: titleTemplate,
         },
         {
           property: `og:description`,
@@ -53,23 +56,46 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          property: `og:image`,
+          content: `https://${domain}${ogImage}`,
         },
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          property: `og:width`,
+          content: `1200`,
+        },
+        {
+          property: `og:height`,
+          content: `630`,
+        },
+
+        {
+          name: `twitter:card`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: titleTemplate,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: 'msapplication-TileColor',
+          content: '#ffffff',
+        },
+        {
+          name: 'theme-color',
+          content: '#ffffff',
+        },
       ].concat(meta)}
-    />
+    >
+      {/* <link rel="apple-touch-icon" size="180x180" href="/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="mask-icon" color="#000000" href="/safari-pinned-tab.svg" /> */}
+    </Helmet>
   )
 }
 
@@ -83,7 +109,7 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 }
 
 export default SEO

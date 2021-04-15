@@ -1,0 +1,19 @@
+{
+  "description": "This is to config VS Code to recongnise our aliases, aka https://medium.com/@justintulk/solve-module-import-aliasing-for-webpack-jest-and-vscode-74007ce4adc9",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "paths": {
+      // "api": ["api"],
+      "~components": ["src/components"],
+      // "~containers": ["src/containers"],
+      // "globalstore": ["store.js"],
+      "~img": ["src/assets/img"],
+      "~fonts": ["src/assets/fonts"],
+      // "~hooks": ["hooks"],
+      "~styles": ["src/styles"],
+      "~images": ["src/images"]
+    }
+  },
+  "exclude": ["node_modules", "public"]
+}
