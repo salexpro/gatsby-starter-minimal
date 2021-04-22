@@ -3,7 +3,6 @@ import { Container } from 'react-bootstrap'
 import { header, header__logo } from './style.module.scss'
 
 import Menu from '~components/Menu'
-// import sprite from '~img/icons.svg'
 
 const Header = ({ siteTitle }) => (
   <Container as="header" className={header}>

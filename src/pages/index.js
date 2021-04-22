@@ -6,6 +6,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
+import Icon from '~components/Icon'
+
 import { Container } from 'react-bootstrap'
 
 const IndexPage = () => (
@@ -23,6 +25,7 @@ const IndexPage = () => (
         style={{ marginBottom: `1.45rem` }}
         placeholder="blurred"
       />
+      <Icon name="globe" size={60} />
       <p>
         <Link to="/page-2/">Go to page 2</Link> <br />
       </p>
