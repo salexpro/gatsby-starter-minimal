@@ -20,8 +20,8 @@ Icon.defaultProps = {
 
 Icon.propTypes = {
   name: PropTypes.string.isRequired,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
-  viewbox: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
+  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.array]),
+  viewbox: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.array]),
 }
 
 export default Icon
