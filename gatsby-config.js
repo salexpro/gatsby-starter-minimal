@@ -3,9 +3,9 @@ module.exports = {
     FAST_DEV: true,
   },
   siteMetadata: {
-    title: `SiteName`,
+    title: `Gatsby Starter`,
     description: `Description`,
-    domain: '*.min.studio',
+    domain: 'starter.min.studio',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
