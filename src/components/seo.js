@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import ogImage from '~img/og-image.png'
 
-function SEO({ description, lang, meta, title }) {
+const SEO = ({ description, lang, meta, title, image }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -57,7 +57,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://${domain}${ogImage}`,
+          content: `https://${domain}${ogImage || image}`,
         },
         {
           property: `og:width`,
@@ -110,6 +110,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
+  image: PropTypes.string,
 }
 
 export default SEO

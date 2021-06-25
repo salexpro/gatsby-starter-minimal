@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 // https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/
 
 import Layout from '../components/Layout'
-import SEO from '../components/seo'
+import S from '../components/seo'
 
 import Icon from '~components/Icon'
 
@@ -13,7 +13,7 @@ import { Container } from 'react-bootstrap'
 const IndexPage = () => (
   <Layout>
     <Container>
-      <SEO title="Home" />
+      <S title="Home" />
       <h1>Howdy!</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
