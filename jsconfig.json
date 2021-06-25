@@ -2,7 +2,7 @@
   "description": "This is to config VS Code to recongnise our aliases, aka https://medium.com/@justintulk/solve-module-import-aliasing-for-webpack-jest-and-vscode-74007ce4adc9",
   "compilerOptions": {
     "baseUrl": ".",
-    "jsx": "preserve",
+    // "jsx": "preserve",
     "paths": {
       // "api": ["api"],
       // "globalstore": ["store.js"],
