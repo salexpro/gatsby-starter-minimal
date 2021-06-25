@@ -5,14 +5,10 @@
     "jsx": "preserve",
     "paths": {
       // "api": ["api"],
-      "~components": ["src/components"],
-      // "~containers": ["src/containers"],
       // "globalstore": ["store.js"],
       "~img": ["src/assets/img"],
       "~fonts": ["src/assets/fonts"],
       // "~hooks": ["hooks"],
-      "~styles": ["src/styles"],
-      "~images": ["src/images"],
       "~*": ["./src/*"]
     }
   },
