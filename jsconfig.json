@@ -12,7 +12,8 @@
       "~fonts": ["src/assets/fonts"],
       // "~hooks": ["hooks"],
       "~styles": ["src/styles"],
-      "~images": ["src/images"]
+      "~images": ["src/images"],
+      "~*": ["./src/*"]
     }
   },
   "exclude": ["node_modules", "public"]
