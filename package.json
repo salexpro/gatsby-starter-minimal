@@ -5,11 +5,11 @@
   "version": "0.1.0",
   "author": "salexpro <dev@salex.pro>",
   "dependencies": {
-    "@percy/cli": "^1.0.0-beta.56",
+    "@percy/cli": "^1.0.0-beta.57",
     "@svgr/webpack": "^5.5.0",
     "bootstrap": "^5.0.2",
     "classnames": "^2.3.1",
-    "gatsby": "^3.8.0",
+    "gatsby": "^3.8.1",
     "gatsby-plugin-gatsby-cloud": "^2.8.1",
     "gatsby-plugin-image": "^1.8.0",
     "gatsby-plugin-minify-classnames": "^0.3.0",
@@ -30,7 +30,7 @@
     "sass": "^1.35.1"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "prettier": "2.3.2"
   },
   "keywords": [
     "gatsby"
