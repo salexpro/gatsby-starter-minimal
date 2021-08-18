@@ -1,13 +1,9 @@
 @charset 'utf-8';
 
-// @import 'components/fonts';
+@import 'components/fonts';
 
 // Required
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/mixins';
-
-// Theming
-@import 'settings';
+@import 'mixins';
 
 // Reset in case we need to reset badges
 // @mixin badge-variant($bg) {
@@ -50,7 +46,6 @@
 // @import "~bootstrap/scss/images";
 
 // Components
-@import 'components/fonts';
 @import 'components/base';
 @import 'components/container'; // our custom container
 @import 'components/button';
