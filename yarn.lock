@@ -7288,10 +7288,10 @@ gatsby-plugin-image@1.8.0:
     objectFitPolyfill "^2.3.0"
     prop-types "^15.7.2"
 
-gatsby-plugin-minify-classnames@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-minify-classnames/-/gatsby-plugin-minify-classnames-0.3.0.tgz#9966562cbdcb7bea88a44d67b8b3e32ae9a4501d"
-  integrity sha512-nr3KysLLZfm3VxRyJ2OnOBZJrHPMOULtppVUOFjusL9nBetvnOza0M/xucDNpjWxI1AuA3mkqYil0IZdzcyhOA==
+gatsby-plugin-minify-classnames@0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-minify-classnames/-/gatsby-plugin-minify-classnames-0.3.1.tgz#e342f82cf46b717d4bd378ba1194343a70e97848"
+  integrity sha512-RlEbThkwJzI+EdEuWqWbYeNSFXn8QaQM2KzxH7BWKLghkbgc8lTCKhMMStoe0XPRtSIccLrIlrIoGKdWq7o0PA==
   dependencies:
     incstr "^1.2.3"
 
@@ -12358,10 +12358,10 @@ sass-loader@^10.1.1:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@^1.35.1:
-  version "1.35.1"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.35.1.tgz#90ecf774dfe68f07b6193077e3b42fb154b9e1cd"
-  integrity sha512-oCisuQJstxMcacOPmxLNiLlj4cUyN2+8xJnG7VanRoh2GOLr9RqkvI4AxA4a6LHVg/rsu+PmxXeGhrdSF9jCiQ==
+sass@1.39.0:
+  version "1.39.0"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.39.0.tgz#6c64695d1c437767c8f1a4e471288e831f81d035"
+  integrity sha512-F4o+RhJkNOIG0b6QudYU8c78ZADKZjKDk5cyrf8XTKWfrgbtyVVXImFstJrc+1pkQDCggyidIOytq6gS4gCCZg==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
 
