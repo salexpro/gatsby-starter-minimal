@@ -1,8 +1,8 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
+
 import Layout from '../components/Layout'
 import S from '../components/seo'
-
-import { Container } from 'react-bootstrap'
 
 const NotFoundPage = () => (
   <Layout>

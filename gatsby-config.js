@@ -8,6 +8,8 @@ module.exports = {
     domain: 'starter.min.studio',
   },
   plugins: [
+    // https://www.gatsbyjs.com/plugins/gatsby-plugin-webpack-bundle-analyser-v2/
+    `gatsby-plugin-webpack-bundle-analyser-v2`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-minify-classnames`,
@@ -58,7 +60,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

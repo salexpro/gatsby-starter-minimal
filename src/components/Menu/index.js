@@ -1,5 +1,6 @@
 import React from 'react'
-import { useLocation } from '@reach/router'
+import PropTypes from 'prop-types'
+import { useLocation } from '@gatsbyjs/reach-router'
 import { Link, withPrefix } from 'gatsby'
 import { Nav } from 'react-bootstrap'
 import cn from 'classnames'
@@ -36,6 +37,14 @@ const Menu = ({ variant }) => {
       ))}
     </Nav>
   )
+}
+
+Menu.defaultProps = {
+  variant: '',
+}
+
+Menu.propTypes = {
+  variant: PropTypes.string,
 }
 
 export default Menu
