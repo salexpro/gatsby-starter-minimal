@@ -1,10 +1,9 @@
-import * as React from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
+import { Container } from 'react-bootstrap'
 
 import Layout from '../components/Layout'
 import S from '../components/seo'
-
-import { Container } from 'react-bootstrap'
 
 const SecondPage = () => (
   <Layout>

@@ -1,14 +1,12 @@
-import * as React from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-// https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/
+import { Container } from 'react-bootstrap'
 
 import Layout from '../components/Layout'
 import S from '../components/seo'
 
 import Icon from '~components/Icon'
-
-import { Container } from 'react-bootstrap'
 
 const IndexPage = () => (
   <Layout>
