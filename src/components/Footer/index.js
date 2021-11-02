@@ -4,14 +4,14 @@ import PropTypes from 'prop-types'
 
 import Menu from '~components/Menu'
 
-import * as style from './style.module.scss'
+import * as s from './style.module.scss'
 
 const Footer = ({ siteTitle }) => {
   return (
-    <Container as="footer" className={style.footer}>
-      <div className={style.footer__logo}>{siteTitle}</div>
+    <Container as="footer" className={s.footer}>
+      <div className={s.footer__logo}>{siteTitle}</div>
       <Menu variant="footer" />
-      <div className={style.footer__copy}>
+      <div className={s.footer__copy}>
         © 2021 {siteTitle}. All Rights Reserved
       </div>
     </Container>
