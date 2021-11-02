@@ -62,13 +62,13 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop -H 0.0.0.0 -o",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,ts,tsx,json,mdx,md,css,scss}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "prepare": "husky install",
-    "cm": "cz"
+    "cz": "cz"
   },
   "repository": {
     "type": "git",
@@ -81,7 +81,7 @@
     "*.{js,jsx,ts,tsx,json}": [
       "eslint"
     ],
-    "*.{css,scss,md}": [
+    "*.{css,scss,md,mdx}": [
       "prettier --write"
     ]
   },
