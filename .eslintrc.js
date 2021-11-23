@@ -45,6 +45,13 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'warn',
     'react/forbid-prop-types': 'off',
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
     'id-match': [
       'error',
       '^[a-zA-Z0-9_$]*$',
