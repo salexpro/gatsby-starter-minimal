@@ -25,3 +25,14 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     },
   })
 }
+
+if (process.env.NODE_ENV === `development`) {
+  exports.createPages = async ({ actions }) => {
+    const { createPage } = actions
+    const productTemplate = path.resolve(`src/templates/SVGPreview/index.jsx`)
+    createPage({
+      path: `/___svg`,
+      component: productTemplate,
+    })
+  }
+}
