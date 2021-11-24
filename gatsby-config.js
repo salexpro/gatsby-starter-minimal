@@ -1,7 +1,11 @@
 module.exports = {
-  flags: {
-    FAST_DEV: true,
-  },
+  /*
+  Experimental flags that increase DX and build times with different technics (may require to use `yarn clean` time to time)
+  Current avaliable flags: https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby/src/utils/flags.ts
+  */
+  // flags: {
+  //   FAST_DEV: true,
+  // },
   siteMetadata: {
     title: `Gatsby Starter`,
     description: `Description`,
