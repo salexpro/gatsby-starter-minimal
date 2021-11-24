@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Starter`,
     description: `Description`,
-    domain: 'starter.min.studio',
+    domain: process.env.GATSBY_VERCEL_URL || 'starter.min.studio',
   },
   plugins: [
     // https://www.gatsbyjs.com/plugins/gatsby-plugin-webpack-bundle-analyser-v2/
