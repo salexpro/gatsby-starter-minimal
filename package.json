@@ -55,7 +55,7 @@
     "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.26",
     "husky": "7.0.4",
     "lint-staged": "11.2.6",
-    "prettier": "2.4.1"
+    "prettier": "2.5.0"
   },
   "keywords": [
     "gatsby"
