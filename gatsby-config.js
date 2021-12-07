@@ -50,13 +50,6 @@ module.exports = {
         urlSvgOptions: [
           {
             test: /\.svg$/,
-            svgoConfig: {
-              plugins: [
-                {
-                  cleanupIDs: false,
-                },
-              ],
-            },
             urlLoaderOptions: {
               limit: 10,
             },
