@@ -6217,10 +6217,10 @@ gatsby-plugin-image@2.3.0:
     objectFitPolyfill "^2.3.5"
     prop-types "^15.7.2"
 
-gatsby-plugin-minify-classnames@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-minify-classnames/-/gatsby-plugin-minify-classnames-4.0.0.tgz#2b4c0694188486c0406d248e27d86e6d6b7588ad"
-  integrity sha512-+udi3id+BYZAQzMle2IUUM746+m/lP1Sfn5h4EszpOgSfL0EhGNywSJh6G1zFh4lP/YYoCov3dM8V6/2lxjnFQ==
+gatsby-plugin-minify-classnames@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-minify-classnames/-/gatsby-plugin-minify-classnames-4.1.0.tgz#2559299b70e0a44a646977087bb44e414c856710"
+  integrity sha512-zB+dL0/FTvhJgQkDztgLid9BN6bpSPC4gbM1bceChjbVqvL8ti7onJeL5eGhRueHsl3m6K++A5DTObW+L1Zh6g==
   dependencies:
     incstr "^1.2.3"
 
