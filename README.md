@@ -1,10 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://min.studio"><img alt="Minimal" src="https://min.studio/wp-content/uploads/2021/02/logo.svg" width="160" /></a>
-  
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+  <a href="https://min.studio" target="_blank"><img width="100" alt="Minimal" src="https://user-images.githubusercontent.com/4237964/152536371-d5868f21-5d98-425e-b7aa-54ee74aa3886.png"></a>&nbsp;&nbsp;
+  <a href="https://www.gatsbyjs.com" target="_blank"><img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="100" /></a>
 </p>
 <h1 align="center">
   Minimal's default starter
