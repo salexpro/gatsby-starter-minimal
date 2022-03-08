@@ -52,8 +52,13 @@
     "eslint-plugin-react-hooks": "4.3.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.26",
     "husky": "7.0.4",
-    "lint-staged": "12.3.4",
-    "prettier": "2.5.1"
+    "nano-staged": "^0.6.0",
+    "prettier": "2.5.1",
+    "stylelint": "^14.5.3",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-prettier": "^2.0.0"
   },
   "keywords": [
     "gatsby"
@@ -77,12 +82,20 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "browserslist": ["last 2 versions", "not dead", "not ie 11", "not op_mini all"],
-  "lint-staged": {
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie 11",
+    "not op_mini all"
+  ],
+  "nano-staged": {
     "*.{js,jsx,ts,tsx,json}": [
       "eslint"
     ],
-    "*.{css,scss,md,mdx}": [
+    "*.{css,scss}": [
+      "stylelint"
+    ],
+    "*.{md,mdx}": [
       "prettier --write"
     ]
   },

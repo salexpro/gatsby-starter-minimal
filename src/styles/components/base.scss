@@ -13,9 +13,11 @@ body {
   width: 5px;
   height: 5px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: $primary;
   border-radius: 5px;
+
   &:hover {
     background: darken($primary, 10);
   }
@@ -29,7 +31,7 @@ body {
 [type='search']::-webkit-search-cancel-button,
 [type='search']::-webkit-search-results-button,
 [type='search']::-webkit-search-results-decoration {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 a {
