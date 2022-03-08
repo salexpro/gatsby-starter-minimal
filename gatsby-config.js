@@ -9,6 +9,7 @@ module.exports = {
   //   FAST_DEV: true,
   // },
   trailingSlash: 'never',
+  polyfill: false,
   siteMetadata: {
     title: `Gatsby Starter`,
     description: `Description`,
