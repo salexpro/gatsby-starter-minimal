@@ -68,7 +68,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop -H 0.0.0.0 -o",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,ts,tsx,json,mdx,md,css,scss}\"",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
@@ -93,7 +93,7 @@
       "eslint"
     ],
     "*.{css,scss}": [
-      "stylelint"
+      "stylelint --allow-empty-input"
     ],
     "*.{md,mdx}": [
       "prettier --write"

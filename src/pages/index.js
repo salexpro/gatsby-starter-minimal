@@ -3,10 +3,9 @@ import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Container } from 'react-bootstrap'
 
+import Icon from '~components/Icon'
 import Layout from '../components/Layout'
 import S from '../components/seo'
-
-import Icon from '~components/Icon'
 
 const IndexPage = () => (
   <Layout>
