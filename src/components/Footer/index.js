@@ -7,12 +7,14 @@ import Menu from '~components/Menu'
 import * as s from './style.module.scss'
 
 const Footer = ({ siteTitle }) => {
+  const currentYear = new Date().getFullYear()
+
   return (
     <Container as="footer" className={s.footer}>
       <div className={s.footer__logo}>{siteTitle}</div>
       <Menu variant="footer" />
       <div className={s.footer__copy}>
-        © 2021 {siteTitle}. All Rights Reserved
+        © {currentYear} {siteTitle}. All Rights Reserved
       </div>
     </Container>
   )
