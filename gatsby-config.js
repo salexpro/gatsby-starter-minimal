@@ -28,15 +28,16 @@ module.exports = {
         suffix: rnd(),
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/data`,
-    //   },
-    // },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `@gvrs/gatsby-transformer-blurhash`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/data`,
+      },
+    },
     {
       resolve: `gatsby-plugin-svgr-svgo`,
       options: {
