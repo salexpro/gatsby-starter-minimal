@@ -1436,7 +1436,7 @@
     tslib "~2.2.0"
     value-or-promise "1.0.6"
 
-"@gvrs/gatsby-transformer-blurhash@^1.0.4":
+"@gvrs/gatsby-transformer-blurhash@1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@gvrs/gatsby-transformer-blurhash/-/gatsby-transformer-blurhash-1.0.4.tgz#8e723241fef7efc695fea27fbbf0059e83eec943"
   integrity sha512-UVUvlpD69/d79RdPOe8l1lPRKJBJHlNj4XC1pYpHsxlSUJawxsbUr4EWEfXgXmiohZEuZ9OiB0pf9qlCDK9iPg==
