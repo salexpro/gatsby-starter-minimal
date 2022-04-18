@@ -5,20 +5,22 @@ import sprite from './icons.svg'
 const paramToArray = (param) =>
   typeof param === 'object' ? param : [param, param]
 
-const Icon = ({ name, size, viewbox }) => {
+const Icon = React.forwardRef(({ name, size, viewbox, ...rest }, ref) => {
   const sizes = paramToArray(size)
   const vbox = viewbox ? paramToArray(viewbox) : sizes
   return (
     <svg
+      {...rest}
       xmlns="http://www.w3.org/2000/svg"
       width={sizes[0]}
       height={sizes[1]}
       viewBox={`0 0 ${vbox[0]} ${vbox[1]}`}
+      ref={ref}
     >
       <use fill="currentColor" xlinkHref={`${sprite}#${name}`} />
     </svg>
   )
-}
+})
 
 Icon.defaultProps = {
   size: [24, 24],
