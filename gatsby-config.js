@@ -11,7 +11,7 @@ module.exports = {
   trailingSlash: 'never',
   polyfill: false,
   siteMetadata: {
-    title: `Gatsby Starter`,
+    title: `Minimal Gatsby Starter`,
     description: `Description`,
     domain: process.env.GATSBY_VERCEL_URL || 'starter.min.studio',
   },
