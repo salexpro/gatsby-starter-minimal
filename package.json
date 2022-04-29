@@ -33,7 +33,7 @@
     "react-bootstrap": "2.3.0",
     "react-dom": "18.0.0",
     "react-helmet": "6.1.0",
-    "sass": "1.50.1",
+    "sass": "1.51.0",
     "svg-parser": "2.0.4"
   },
   "devDependencies": {
