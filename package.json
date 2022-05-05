@@ -83,27 +83,5 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "not dead",
-    "not ie 11",
-    "not op_mini all"
-  ],
-  "nano-staged": {
-    "*.{js,jsx,ts,tsx,json}": [
-      "eslint"
-    ],
-    "*.{css,scss}": [
-      "stylelint --allow-empty-input"
-    ],
-    "*.{md,mdx}": [
-      "prettier --write"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
