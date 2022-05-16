@@ -29,6 +29,7 @@ const IndexPage = ({ data: { image } }) => (
       <p>
         {/* Example of sprite icon usage  */}
         <Icon name="globe" size={60} />
+        <Icon name="icon-logo" size={60} isFromInlineDefs />
       </p>
       <p>
         <Link to="/page-2">Go to page 2</Link> <br />
