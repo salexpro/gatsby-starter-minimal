@@ -13,7 +13,7 @@ module.exports = {
   siteMetadata: {
     title: `Minimal Gatsby Starter`,
     description: `Description`,
-    domain: process.env.GATSBY_VERCEL_URL || 'starter.min.studio',
+    domain: process.env.CF_PAGES_URL || 'starter.min.studio',
   },
   plugins: [
     // https://www.gatsbyjs.com/plugins/gatsby-plugin-webpack-bundle-analyser-v2/
@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-minify-classnames`,
       options: {
-        enable: process.env.GATSBY_VERCEL_ENV === 'production',
+        enable: process.env.CF_PAGES_BRANCH === 'master',
         prefix: rnd(),
         suffix: rnd(),
       },
