@@ -4,8 +4,9 @@ import classNames from 'classnames'
 import { parse } from 'svg-parser'
 
 import svgSrc from '~components/Icon/icons.svg'
-import * as style from './SVGSprite.module.scss'
 import Icon from '~components/Icon'
+
+import * as style from './SVGSprite.module.scss'
 
 /**
  * SVGSprite component

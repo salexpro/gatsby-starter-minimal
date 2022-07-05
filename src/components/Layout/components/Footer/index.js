@@ -2,9 +2,9 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import PropTypes from 'prop-types'
 
-import Menu from '~components/Menu'
+import Menu from '../Menu'
 
-import * as s from './style.module.scss'
+import * as s from './Footer.module.scss'
 
 const Footer = ({ siteTitle }) => {
   const currentYear = new Date().getFullYear()
