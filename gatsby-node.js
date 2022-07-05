@@ -6,7 +6,7 @@
 
 const path = require('path')
 
-exports.onCreateWebpackConfig = ({ actions }) => {
+exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
@@ -24,6 +24,16 @@ exports.onCreateWebpackConfig = ({ actions }) => {
       },
     },
   })
+
+  /* Set ignoreOrder: true to remove warnings when using css modules */
+  const config = getConfig()
+  const miniCssExtractPlugin = config.plugins.find(
+    (plugin) => plugin.constructor.name === 'MiniCssExtractPlugin'
+  )
+  if (miniCssExtractPlugin) {
+    miniCssExtractPlugin.options.ignoreOrder = true
+  }
+  actions.replaceWebpackConfig(config)
 }
 
 if (process.env.NODE_ENV === `development`) {

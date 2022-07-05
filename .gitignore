@@ -71,3 +71,10 @@ yarn-error.log
 
 # JetBrains WebStorm
 .idea
+
+# Stylelint cache
+.stylelintcache
+
+# For IDEs use global gitignore
+# touch ~/.gitignore_global
+# git config --global core.excludesfile ~/.gitignore_global
