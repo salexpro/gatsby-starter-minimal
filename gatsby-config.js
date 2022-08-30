@@ -1,5 +1,7 @@
 const rnd = () => Math.random().toString(36).substring(2, 3)
 
+const productionBranchNames = ['master', 'main']
+
 module.exports = {
   /*
   Experimental flags that increase DX and build times with different technics (may require to use `yarn clean` time to time)
@@ -13,7 +15,13 @@ module.exports = {
   siteMetadata: {
     title: `Minimal Gatsby Starter`,
     description: `Description`,
-    domain: process.env.CF_PAGES_URL || 'starter.min.studio',
+    domain:
+      // Cloudflare
+      process.env.CF_PAGES_URL ||
+      // Vercel
+      process.env.GATSBY_VERCEL_URL ||
+      // Default
+      'starter.min.studio',
   },
   plugins: [
     // https://www.gatsbyjs.com/plugins/gatsby-plugin-webpack-bundle-analyser-v2/
@@ -23,7 +31,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-minify-classnames`,
       options: {
-        enable: process.env.CF_PAGES_BRANCH === 'master',
+        enable:
+          // Cloudflare
+          productionBranchNames.includes(process.env.CF_PAGES_BRANCH) ||
+          // Gatsby Cloud
+          productionBranchNames.includes(process.env.BRANCH) ||
+          // Vercel
+          process.env.GATSBY_VERCEL_ENV === 'production',
         prefix: rnd(),
         suffix: rnd(),
       },
