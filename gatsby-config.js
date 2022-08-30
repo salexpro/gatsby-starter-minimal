@@ -26,7 +26,6 @@ module.exports = {
   plugins: [
     // https://www.gatsbyjs.com/plugins/gatsby-plugin-webpack-bundle-analyser-v2/
     // `gatsby-plugin-webpack-bundle-analyser-v2`,
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-minify-classnames`,
@@ -65,6 +64,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-webpack-bundle-analyser-v2`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

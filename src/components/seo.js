@@ -7,12 +7,11 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import ogImage from '~img/og-image.png'
 
-const SEO = ({ description, lang, meta, title, image }) => {
+const SEO = ({ description, title, image, children }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -32,66 +31,27 @@ const SEO = ({ description, lang, meta, title, image }) => {
   const domain = site.siteMetadata?.domain
   const titleTemplate = title ? `${title} – ${defaultTitle}` : defaultTitle
 
-  return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={titleTemplate}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: titleTemplate,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          property: `og:image`,
-          content: `${domain.includes('http') ? domain : `https://${domain}`}${
-            ogImage || image
-          }`,
-        },
-        {
-          property: `og:width`,
-          content: `1200`,
-        },
-        {
-          property: `og:height`,
-          content: `630`,
-        },
+  const ogImageUrl = `${
+    domain.includes('http') ? domain : `https://${domain}`
+  }${ogImage || image}`
 
-        {
-          name: `twitter:card`,
-          content: `summary_large_image`,
-        },
-        {
-          name: `twitter:title`,
-          content: titleTemplate,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-        {
-          name: 'msapplication-TileColor',
-          content: '#000000',
-        },
-        {
-          name: 'theme-color',
-          content: '#000000',
-        },
-      ].concat(meta)}
-    >
+  return (
+    <>
+      <title>{titleTemplate}</title>
+      <meta name="description" content={metaDescription} />
+      <meta name="og:locale" content="en_EN" />
+      <meta name="og:title" content={titleTemplate} />
+      <meta name="og:description" content={metaDescription} />
+      <meta name="og:type" content="website" />
+      <meta name="og:image" content={ogImageUrl} />
+      <meta name="og:width" content="1200" />
+      <meta name="og:height" content="630" />
+      <meta name="twitter:image" content={ogImageUrl} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={titleTemplate} />
+      <meta name="twitter:description" content={metaDescription} />
+      <meta name="msapplication-TileColor" color="#000000" />
+      <meta name="theme-color" color="#000000" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -111,24 +71,23 @@ const SEO = ({ description, lang, meta, title, image }) => {
       />
       <link rel="manifest" href="/site.webmanifest" />
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
-    </Helmet>
+      {children}
+    </>
   )
 }
 
 SEO.defaultProps = {
-  lang: 'en',
-  meta: [],
-  description: '',
-  title: '',
-  image: '',
+  description: undefined,
+  title: undefined,
+  image: undefined,
+  children: undefined,
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
   image: PropTypes.string,
+  children: PropTypes.node,
 }
 
 export default SEO
