@@ -1824,14 +1824,16 @@
   dependencies:
     tslib "^2.4.0"
 
-"@gvrs/gatsby-transformer-blurhash@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@gvrs/gatsby-transformer-blurhash/-/gatsby-transformer-blurhash-1.0.4.tgz#8e723241fef7efc695fea27fbbf0059e83eec943"
-  integrity sha512-UVUvlpD69/d79RdPOe8l1lPRKJBJHlNj4XC1pYpHsxlSUJawxsbUr4EWEfXgXmiohZEuZ9OiB0pf9qlCDK9iPg==
+"@gvrs/gatsby-transformer-blurhash@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@gvrs/gatsby-transformer-blurhash/-/gatsby-transformer-blurhash-2.0.0.tgz#46de818ef2b50861b79049f9b701befb07c2ddbd"
+  integrity sha512-pEWgrUSNA2/gLsc0d4GkdSZyy9U0KtGyI4zCMiutuyUHgOQ+ZecZ4PAzNRcFmWELghlSKbU4TPlDfcqPgj9BGA==
   dependencies:
     blurhash "^1.1.5"
     debug "^4.3.3"
+    gatsby-core-utils "^4.2.0"
     p-queue "^6.6.2"
+    sharp "^0.31.2"
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -6737,6 +6739,27 @@ gatsby-core-utils@^3.25.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
+gatsby-core-utils@^4.2.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.4.0.tgz#458673d22be3eb511ab8e12be4ea233a74591531"
+  integrity sha512-/ibilcGENKH6qqkcT17SIZgc2kjZn3HiGpD+ixbXYkMGqHiM5pj9XIHjy3DfvZvDt2ujkYV5EinmUdqx7CI81w==
+  dependencies:
+    "@babel/runtime" "^7.20.7"
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    fastq "^1.13.0"
+    file-type "^16.5.3"
+    fs-extra "^10.1.0"
+    got "^11.8.5"
+    import-from "^4.0.0"
+    lmdb "2.5.3"
+    lock "^1.1.0"
+    node-object-hash "^2.3.10"
+    proper-lockfile "^4.1.2"
+    resolve-from "^5.0.0"
+    tmp "^0.2.1"
+    xdg-basedir "^4.0.0"
+
 gatsby-graphiql-explorer@^2.25.0:
   version "2.25.0"
   resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-2.25.0.tgz#78fe692009739cbd330b6c10a1cfebcff8301ab8"
@@ -10991,7 +11014,7 @@ semver@7.0.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.0.0.tgz#5f3ca35761e47e05b206c6daff2cf814f0316b8e"
   integrity sha512-+GB6zVA9LWh6zovYQLALHwv5rb2PHGlJi3lfiqIHxR0uuwCgefcOJc59v9fv1w8GbStwxuuqqAjI9NMAOOgq1A==
 
-semver@7.3.8:
+semver@7.3.8, semver@^7.3.8:
   version "7.3.8"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.8.tgz#07a78feafb3f7b32347d725e33de7e2a2df67798"
   integrity sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==
@@ -11099,6 +11122,20 @@ sharp@^0.30.7:
     node-addon-api "^5.0.0"
     prebuild-install "^7.1.1"
     semver "^7.3.7"
+    simple-get "^4.0.1"
+    tar-fs "^2.1.1"
+    tunnel-agent "^0.6.0"
+
+sharp@^0.31.2:
+  version "0.31.3"
+  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.31.3.tgz#60227edc5c2be90e7378a210466c99aefcf32688"
+  integrity sha512-XcR4+FCLBFKw1bdB+GEhnUNXNXvnt0tDo4WsBsraKymuo/IAuPuCBVAL2wIkUw2r/dwFW5Q5+g66Kwl2dgDFVg==
+  dependencies:
+    color "^4.2.3"
+    detect-libc "^2.0.1"
+    node-addon-api "^5.0.0"
+    prebuild-install "^7.1.1"
+    semver "^7.3.8"
     simple-get "^4.0.1"
     tar-fs "^2.1.1"
     tunnel-agent "^0.6.0"
