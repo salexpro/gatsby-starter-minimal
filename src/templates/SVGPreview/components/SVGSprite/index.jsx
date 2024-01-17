@@ -58,12 +58,12 @@ const SVGSprite = (props) => {
       <tbody>
         {symbols.map((symbol) => (
           <tr>
-            <td>
+            <td aria-label={symbol.id}>
               <div className={style.iconWrapper} title={symbol.id}>
                 <Icon name={symbol.id} size={[symbol.width, symbol.height]} />
               </div>
             </td>
-            <td>
+            <td aria-label={`${symbol.id} - black`}>
               <div className={style.iconWrapperBlack} title={symbol.id}>
                 <Icon name={symbol.id} size={[symbol.width, symbol.height]} />
               </div>
