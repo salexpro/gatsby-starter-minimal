@@ -69,7 +69,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "copy-bs-settings": "node ./scripts/copy-bs-settings.js",
-    "prepare": "husky install && npm run copy-bs-settings",
+    "prepare": "husky && npm run copy-bs-settings",
     "cz": "cz"
   },
   "repository": {
