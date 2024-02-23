@@ -14,7 +14,7 @@
     "@gvrs/gatsby-transformer-blurhash": "2.0.0",
     "@percy/cli": "1.28.0",
     "@svgr/webpack": "8.1.0",
-    "bootstrap": "5.3.2",
+    "bootstrap": "5.3.3",
     "classnames": "2.5.1",
     "gatsby": "5.13.3",
     "gatsby-plugin-image": "3.13.1",
